@@ -1,0 +1,98 @@
+.was{
+    padding: 50px 0;
+&__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+    &__title{
+        font-size: 42px;
+        font-weight:600;
+        width: 330px;
+    }
+    &__item{
+        color: #56B280;
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+    &__box{
+        margin-top: 5px;
+        display: flex;
+        gap: 5px;
+    }
+
+    &__text{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    &__icon{
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 2px;
+    }
+
+    &__btn{
+    background-color: #56B280;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    margin-top: 60px;
+    padding: 5px 45px 8px;
+    transition: .5s;
+
+        &:hover{
+        background-color: green;
+    }
+    }
+}
+.gt{
+    display: none;
+}
+
+
+
+
+@media ( max-width:1035px){
+    .was{
+&__wrapper{
+    flex-direction: column;
+    gap: 30px;
+}
+
+&__card{
+    width: 100%;
+}
+
+&__img{
+    width: 100%;
+}
+    }
+
+    .gtr{
+        display: none;
+    }
+.gt{
+    display: block;
+
+}
+}
+
+
+
+
+
+
+
+@media ( max-width:360px){
+    .was{
+&__title{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+}
+    }
+
+  
+}

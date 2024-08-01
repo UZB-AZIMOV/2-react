@@ -1,0 +1,132 @@
+.user{
+    margin: 50px 0;
+    padding: 50px 0;
+    background-color: #56b27f2f;
+    text-align: center;
+
+    &__title{
+        font-size: 40px;
+        font-weight: 500;
+        margin: 20px 0;
+    }
+    &__item{
+        font-size: 18px;
+        font-weight: 500;
+        color: #5E6E89;
+    }
+    &__wrapper{
+        margin-top: 40px;
+        display: flex;
+        gap: 30px;
+    }
+    &__img{
+        background-color:#f1f0f0;
+        border-radius: 50%;
+        width: 80px;
+        height: 90px;
+        object-fit: cover;
+        margin-bottom: 20px;
+
+    }
+    &__star{
+        color: 
+        #56B280;
+        font-size: 22px;
+        margin: 0 5px;
+    }
+
+    &__card{
+        width: calc( 33.3% - 20px);
+        padding: 30px 50px;
+        border-radius: 5px;
+        background-color: white;
+        transition: .5s;
+    }
+
+    &__text{
+        font-size: 22px;
+        font-weight: 500;
+        margin: 10px 0;
+    }
+
+    &__p{
+        color: #7C8087;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+.user__card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3%);
+    border-radius: 10px;
+}
+
+
+
+
+@media ( max-width:1065px){
+    .user{
+&__card{
+    padding: 30px;
+}
+    }
+}
+
+
+
+@media ( max-width:940px){
+    .user{
+        &__wrapper{
+            flex-wrap: wrap;
+        }
+        &__card{
+            width: calc(50% - 15px);
+        }
+    }
+}
+
+
+
+
+
+@media ( max-width:625px){
+    .user{
+     
+        &__card{
+            padding: 20px 10px;
+        }
+    }
+}
+
+
+
+
+
+@media ( max-width:520px){
+    .user{
+        &__wrapper{
+            flex-direction: column;
+            gap: 25px;
+        }
+        &__card{
+            margin: auto;
+            width:80%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+@media ( max-width:400px){
+    .user{
+        &__card{
+            width:100%;
+        }
+    }
+}
